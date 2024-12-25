@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Haffer';
+    src: url('assets/Matter-TRIAL-SemiBold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Haffer';
+    src: url('assets/Matter-TRIAL-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Haffer';
+    src: url('assets/Matter-TRIAL-Heavy.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+:root {
+    --sans-serif: 'Haffer', Helvetica, sans-serif;
+    --beige: #D0D2C8;
+    --black: #212121;
+    --black-20: #21212120;
+    --off-white: #E5E5E5;
+    --off-white-20: #e5e5e5ea;
+    --white: #ffffff;
+    --navy: #545372;
+    --green: #4A6B65;
+}
+
+body {
+    font-family: var(--sans-serif);
+    background-color: var(--beige);
+    color: var(--black);
+}
+
+.container {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 16vw;
+    line-height: 0.8;
+    letter-spacing: -0.03em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 8vw;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+h4 {
+    font-size: 1vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+}
+
+.word {
+    position: relative;
+    display: inline-block;
+}
+
+span {
+    position: relative;
+    display: inline-block;
+}
+
+.frame {
+    background-color: var(--black);
+    /* background-color: rgba(33, 33, 33, 0.9) rgba(33, 33, 33, 0.9); */
+    /* box-shadow: 3px 6px 10px -2px rgba(0, 0, 0, 0.3), inset 0 1px 0 #212121, inset 1px 0 0 #232323, inset 0 -1px 0 #212121, inset -1px 0 0 #232323, inset 0 2px 0 #242425, inset 2px 0 0 #262728, inset 0 -2px 0 #242425, inset -2px 0 0 #262728, inset 0 3px 0 #26272a, inset 3px 0 0 #24252c, inset 0 -3px 0 #26272a, inset -3px 0 0 #24252c, inset 0 4px 0 #292a2e, inset 4px 0 0 #2e2e31, inset 0 -4px 0 #292a2e, inset -4px 0 0 #2e2e31, inset 0 5px 0 #2b2c33, inset 5px 0 0 #313235, inset 0 -5px 0 #2b2c33, inset -5px 0 0 #313235, inset 0 6px 0 #2e2f37, inset 6px 0 0 #353539, inset 0 -6px 0 #2e2f37, inset -6px 0 0 #353539, inset 0 7px 0 #30323c, inset 7px 0 0 #38393e, inset 0 -7px 0 #30323c, inset -7px 0 0 #38393e, inset 0 8px 0 #333540, inset 8px 0 0 #3c3d42, inset 0 -8px 0 #333540, inset -8px 0 0 #3c3d42, inset 0 9px 0 #353844, inset 9px 0 0 #3f4147, inset 0 -9px 0 #353844, inset -9px 0 0 #3f4147, inset 0 10px 0 #383b49, inset 10px 0 0 #43444b, inset 0 -10px 0 #383b49, inset -10px 0 0 #43444b, inset 0 11px 0 #3a3d4d, inset 11px 0 0 #474850, inset 0 -11px 0 #3a3d4d, inset -11px 0 0 #474850, inset 0 12px 0 #3d4052, inset 12px 0 0 #4a4c54, inset 0 -12px 0 #3d4052, inset -12px 0 0 #4a4c54, inset 0 13px 0 #3f4356, inset 13px 0 0 #4a4c54, inset 0 -13px 0 #3f4356, inset -13px 0 0 #4a4c54, inset 0 14px 0 #3d4052, inset 14px 0 0 #474850, inset 0 -14px 0 #3d4052, inset -14px 0 0 #474850, inset 0 15px 0 #3a3d4d, inset 15px 0 0 #43444b, inset 0 -15px 0 #3a3d4d, inset -15px 0 0 #43444b, inset 0 16px 0 #383b49, inset 16px 0 0 #3f4147, inset 0 -16px 0 #383b49, inset -16px 0 0 #3f4147; */
+    color: transparent;
+}
+
+.image {
+    border: 10px solid white;
+    box-shadow: inset -2px -1px 12px -1px var(--black-20);
+    box-sizing: content-box;
+    background-position: center;
+    width: calc(100% - 2.5rem);
+    height: calc(100% - 2.5rem);
+    background-size: cover;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+    font-family: var(--sans-serif);
+    font-weight: 700;
+    background-color: var(--off-white-20);
+    border: none;
+    color: var(--black);
+    padding: 6px 32px 8px 32px;
+    border-radius: 2px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--off-white);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: space-between;
+    position: absolute;
+    border-radius: 5px;
+    width: 28vw;
+    height: 18vw;
+    padding: 18px 24px;
+    color: var(--off-white);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+#print {
+    background-color: var(--navy);
+}
+
+#frames {
+    background-color: var(--green);
+}
+
+.hide {
+    visibility: hidden;
+    top: 50%;
+    left: 50%;
+}
+
+.show--print {
+    visibility: visible;
+    top: 50%;
+    left: 64px;
+}
+
+.show--frames {
+    visibility: visible;
+    top: 50%;
+    right: 64px;
+}
